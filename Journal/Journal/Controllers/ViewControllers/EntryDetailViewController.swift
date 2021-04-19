@@ -9,9 +9,9 @@ import UIKit
 
 class EntryDetailViewController: UIViewController {
     
+    //MARK: - IBOutlets
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var bodyTextView: UITextView!
-    
     
     //MARK: - Properties
     var entry: Entry?
@@ -21,7 +21,6 @@ class EntryDetailViewController: UIViewController {
         super.viewDidLoad()
         updateViews()
     }
-    
     
     //MARK: - IBActions
     @IBAction func saveButtonWasTapped(_ sender: Any) {
@@ -45,6 +44,4 @@ class EntryDetailViewController: UIViewController {
         titleTextField.text = entry.title
         bodyTextView.text = entry.body
     }
-    
-
 }

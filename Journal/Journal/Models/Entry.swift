@@ -8,6 +8,7 @@
 import Foundation
 
 class Entry: Codable {
+    
     //MARK: - Properties
     let uuid: String
     let title: String

@@ -8,6 +8,7 @@
 import Foundation
 
 class EntryController {
+    
     //MARK: - Properties
     static let sharedInstance = EntryController()
     var entries: [Entry] = []
