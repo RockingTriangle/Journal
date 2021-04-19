@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A2E599262E12B900138C69 /* CustomViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2E598262E12B900138C69 /* CustomViewPlaceholder.swift */; };
+		13A2E59D262E12DF00138C69 /* Helper+ExtPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2E59C262E12DF00138C69 /* Helper+ExtPlaceholder.swift */; };
 		7EDA120F259D233600BBD350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA120E259D233600BBD350 /* AppDelegate.swift */; };
 		7EDA1211259D233600BBD350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA1210259D233600BBD350 /* SceneDelegate.swift */; };
 		7EDA1216259D233600BBD350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDA1214259D233600BBD350 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13A2E598262E12B900138C69 /* CustomViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewPlaceholder.swift; sourceTree = "<group>"; };
+		13A2E59C262E12DF00138C69 /* Helper+ExtPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+ExtPlaceholder.swift"; sourceTree = "<group>"; };
 		7EDA120B259D233600BBD350 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDA120E259D233600BBD350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDA1210259D233600BBD350 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +39,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13A2E592262E124E00138C69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13A2E593262E125400138C69 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13A2E595262E127C00138C69 /* ModelControllers */,
+				13A2E594262E127100138C69 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		13A2E594262E127100138C69 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		13A2E595262E127C00138C69 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		13A2E596262E128C00138C69 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13A2E597262E12A100138C69 /* Custom Views */,
+				7EDA1227259D237600BBD350 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13A2E597262E12A100138C69 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				13A2E598262E12B900138C69 /* CustomViewPlaceholder.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		13A2E59B262E12CF00138C69 /* Helpers and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13A2E59C262E12DF00138C69 /* Helper+ExtPlaceholder.swift */,
+			);
+			path = "Helpers and Extensions";
+			sourceTree = "<group>";
+		};
 		7EDA1202259D233600BBD350 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +113,11 @@
 		7EDA120D259D233600BBD350 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				13A2E592262E124E00138C69 /* Models */,
+				13A2E593262E125400138C69 /* Controllers */,
+				13A2E596262E128C00138C69 /* Views */,
+				13A2E59B262E12CF00138C69 /* Helpers and Extensions */,
 				7EDA1223259D234200BBD350 /* Resources */,
-				7EDA1227259D237600BBD350 /* Storyboards */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -152,6 +214,8 @@
 			files = (
 				7EDA120F259D233600BBD350 /* AppDelegate.swift in Sources */,
 				7EDA1211259D233600BBD350 /* SceneDelegate.swift in Sources */,
+				13A2E599262E12B900138C69 /* CustomViewPlaceholder.swift in Sources */,
+				13A2E59D262E12DF00138C69 /* Helper+ExtPlaceholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
