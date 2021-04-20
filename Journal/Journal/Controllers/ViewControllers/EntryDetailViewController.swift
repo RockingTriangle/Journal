@@ -12,23 +12,24 @@ class EntryDetailViewController: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var bodyTextView: UITextView!
-    
-    //MARK: - Properties
-    var entry: Entry?
-
+  
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
     }
     
+    //MARK: - Properties
+    var entry: Entry?
+    var journal: Journal?
+    
     //MARK: - IBActions
     @IBAction func saveButtonWasTapped(_ sender: Any) {
-        if let _ = entry {
-            print("to be implemented tomorrow")
+        guard let journal = journal, let title = titleTextField.text, !title.isEmpty, let body = bodyTextView.text, !body.isEmpty else { return }
+        if let entry = entry {
+            EntryController.update(entry: entry, with: title, and: body)
         } else {
-            guard let title = titleTextField.text, !title.isEmpty, let body = bodyTextView.text, !body.isEmpty else { return }
-            EntryController.sharedInstance.createEntryWith(title: title, and: body)
+            EntryController.createEntryWith(journal: journal, title: title, and: body)
         }
         navigationController?.popViewController(animated: true)
     }

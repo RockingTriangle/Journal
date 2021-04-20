@@ -11,8 +11,8 @@ class Entry: Codable {
     
     //MARK: - Properties
     let uuid: String
-    let title: String
-    let body: String
+    var title: String
+    var body: String
     let entryCreationTimestamp: Date
     
     //MARK: - Initializer
